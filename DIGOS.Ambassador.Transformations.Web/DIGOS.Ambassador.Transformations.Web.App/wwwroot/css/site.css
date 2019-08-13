@@ -91,10 +91,6 @@ app {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.container-fluid, .parent {
-    height: 100vh;
-}
-
 .scrollable-column {
     height: 100vh;
     overflow-y: scroll;

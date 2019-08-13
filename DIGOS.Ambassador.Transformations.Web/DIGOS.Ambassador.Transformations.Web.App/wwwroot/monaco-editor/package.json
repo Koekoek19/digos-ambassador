@@ -1,0 +1,121 @@
+{
+  "_args": [
+    [
+      "monaco-editor",
+      "/home/jarl/Programming/monaco-editor"
+    ]
+  ],
+  "_from": "monaco-editor@latest",
+  "_hasShrinkwrap": false,
+  "_id": "monaco-editor@0.17.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/monaco-editor",
+  "_nodeVersion": "10.16.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/monaco-editor_0.17.1_1561420192279_0.4720217694024098"
+  },
+  "_npmUser": {
+    "email": "mattbierner@gmail.com",
+    "name": "mattbierner"
+  },
+  "_npmVersion": "6.9.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "monaco-editor",
+    "raw": "monaco-editor",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/monaco-editor/-/monaco-editor-0.17.1.tgz",
+  "_shasum": "8fbe96ca54bfa75262706e044f8f780e904aa45c",
+  "_shrinkwrap": null,
+  "_spec": "monaco-editor",
+  "_where": "/home/jarl/Programming/monaco-editor",
+  "author": {
+    "name": "Microsoft Corporation"
+  },
+  "bugs": {
+    "url": "https://github.com/Microsoft/monaco-editor/issues"
+  },
+  "dependencies": {},
+  "description": "A browser based code editor",
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "event-stream": "3.3.4",
+    "gulp": "^4.0.0",
+    "gulp-typedoc": "^2.2.2",
+    "http-server": "^0.11.1",
+    "monaco-css": "2.5.0",
+    "monaco-editor-core": "0.17.0",
+    "monaco-html": "2.5.2",
+    "monaco-json": "2.5.1",
+    "monaco-languages": "1.7.0",
+    "monaco-typescript": "3.5.0",
+    "rimraf": "^2.6.3",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.3.3",
+    "uncss": "^0.16.2",
+    "vinyl": "^2.2.0"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 988,
+    "integrity": "sha512-JAc0mtW7NeO+0SwPRcdkfDbWLgkqL9WfP1NbpP9wNASsW6oWqgZqNIWt4teymGjZIXTElx3dnQmUYHmVrJ7HxA==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdEWGhCRA9TVsSAnZWagAAjckP/ju4U5fEiG5+U5kV66v8\ncS2hO0walGAS4ypDFHznrQUuo3C6gFWFlJNOvHw3KpmoEDDzKMvWKzs7EgF6\n5Am86hyim6ROu+4hNV3HF8GAJgafFPPpmJKkkoesqIWn9QnMXRKqb+0jSRoP\nAfuEmlGBsPXv4CfBoEhbWtASSqY8byg8ifT7wQDL8XY5Xpyk7Kb6QaOyzLo3\nOjIRL+TsbRxS+8uwoID93+0M6U2rC2dNXtK6AITVQ+8hjK2FInhTm+I/dYny\npDxwMZiH2JVZydTIXZB0PudMJrmaKsVDDID9sKta7lff64m1668O8uUrdfxM\nQ9M2eQEdfaypk0SS8t1JMsf7HYMq0sJW164afKJRFzqgNBVCmLUEj3W76AQO\nQtz570NZeOlKzK1nHBudNSN5RM+EjSySKitRbnOId5s/fYax8uWTK+2JEKsG\neqrdHHHn05DILPIcUX2C2Vp1oqOr7gh5cJXl1sO3hnLyxwGY9zsYe0fVkyn2\nj7BndhC2EJfxKe9HOuLpLusRfQFF8IQOw3gqOUr+njYGGU5VQg/7bwsmcznm\n7NgoVCmtKAgnUDR+iPcHeLYcTZihFnSsqjzzilAd6CwExhEQVJkzTm1Xjlry\niqgLwvugFsQGK/9S/8F/q8ztPvHE/gPYZn59Cy/WcN2ReFOmDWjODVbM1X3j\nydKc\r\n=B8Oa\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "8fbe96ca54bfa75262706e044f8f780e904aa45c",
+    "tarball": "https://registry.npmjs.org/monaco-editor/-/monaco-editor-0.17.1.tgz",
+    "unpackedSize": 60958471
+  },
+  "homepage": "https://github.com/Microsoft/monaco-editor#readme",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "aeschli",
+      "email": "martinae@microsoft.com"
+    },
+    {
+      "name": "alexandrudima",
+      "email": "alexdima@microsoft.com"
+    },
+    {
+      "name": "egamma",
+      "email": "egamma@microsoft.com"
+    },
+    {
+      "name": "jrieken",
+      "email": "jrieken@microsoft.com"
+    },
+    {
+      "name": "microsoft",
+      "email": "npmjs@microsoft.com"
+    },
+    {
+      "name": "rebornix",
+      "email": "penn.lv@gmail.com"
+    }
+  ],
+  "module": "./esm/vs/editor/editor.main.js",
+  "name": "monaco-editor",
+  "optionalDependencies": {},
+  "private": false,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Microsoft/monaco-editor.git"
+  },
+  "scripts": {
+    "build-website": "gulp build-website",
+    "release": "gulp release",
+    "simpleserver": "gulp simpleserver",
+    "website": "gulp website"
+  },
+  "typings": "./esm/vs/editor/editor.api.d.ts",
+  "version": "0.17.1"
+}
