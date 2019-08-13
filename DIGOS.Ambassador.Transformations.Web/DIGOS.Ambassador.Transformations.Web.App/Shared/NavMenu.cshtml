@@ -1,32 +1,46 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Species Builder</a>
+﻿@using DIGOS.Ambassador.Plugins.Transformations.Extensions
+@using DIGOS.Ambassador.Plugins.Transformations.Transformations
+<div class="top-row pl-4 navbar navbar-dark">
     <button class="navbar-toggler" onclick=@ToggleNavMenu>
         <span class="navbar-toggler-icon"></span>
     </button>
+    <a class="navbar-brand" href="">Species Creator</a>
 </div>
 
 <div class=@(collapseNavMenu ? "collapse" : null) onclick=@ToggleNavMenu>
     <ul class="nav flex-column">
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match=NavLinkMatch.All>
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </li>
+        @foreach (var bodypart in this.AvailableBodyparts)
+        {
+            <li class="nav-item px-3">
+                <a class="nav-link active" onclick=@(async () => await OnPartClicked(bodypart))>
+                    <span class="oi @(bodypart.IsAdded ? "oi-trash" : "oi-plus")" aria-hidden="true"></span> @bodypart.Bodypart
+                </a>
+            </li>
+        }
     </ul>
 </div>
 
 @functions {
+    List<AvailableBodypart> AvailableBodyparts = new List<AvailableBodypart>();
+
     bool collapseNavMenu = true;
+
+    /// <inheritdoc />
+    protected override Task OnInitAsync()
+    {
+        foreach (var bodypart in Enum.GetValues(typeof(Bodypart)).Cast<Bodypart>().Where(b => !b.IsComposite() && b.IsGenderNeutral()))
+        {
+            this.AvailableBodyparts.Add(new AvailableBodypart(bodypart));
+        }
+
+        return Task.CompletedTask;
+    }
+
+    Task OnPartClicked(AvailableBodypart bodypart)
+    {
+        bodypart.IsAdded = !bodypart.IsAdded;
+        return Task.CompletedTask;
+    }
 
     void ToggleNavMenu()
     {

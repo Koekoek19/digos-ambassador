@@ -1,5 +1,5 @@
-﻿//
-//  Program.cs
+//
+//  AvailableBodypart.cs
 //
 //  Author:
 //       Jarl Gullberg <jarl.gullberg@gmail.com>
@@ -20,31 +20,32 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-using Microsoft.AspNetCore.Blazor.Hosting;
+using DIGOS.Ambassador.Plugins.Transformations.Transformations;
 
-namespace DIGOS.Ambassador.Transformations.Web.App
+namespace DIGOS.Ambassador.Transformations.Web.App.Shared
 {
     /// <summary>
-    /// Defines the main class of the program.
+    /// Represents an available bodypart.
     /// </summary>
-    public class Program
+    public class AvailableBodypart
     {
         /// <summary>
-        /// The main entry point of the program.
+        /// Gets the bodypart.
         /// </summary>
-        /// <param name="args">The command-line arguments.</param>
-        public static void Main(string[] args)
-        {
-            CreateHostBuilder(args).Build().Run();
-        }
+        public Bodypart Bodypart { get; }
 
         /// <summary>
-        /// Creates the host builder.
+        /// Gets or sets a value indicating whether the bodypart has been added to the species.
         /// </summary>
-        /// <param name="args">The command-line arguments.</param>
-        /// <returns>The host builder.</returns>
-        public static IWebAssemblyHostBuilder CreateHostBuilder(string[] args) =>
-            BlazorWebAssemblyHost.CreateDefaultBuilder()
-                .UseBlazorStartup<Startup>();
+        public bool IsAdded { get; set; }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AvailableBodypart"/> class.
+        /// </summary>
+        /// <param name="bodypart">The bodypart.</param>
+        public AvailableBodypart(Bodypart bodypart)
+        {
+            this.Bodypart = bodypart;
+        }
     }
 }
