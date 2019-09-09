@@ -3,7 +3,9 @@
     {
         "sexSpecies":
         [
-            "{@target} is a {@sex} {@species}."
+            "{@target} is a {@sex} {@species}.",
+            "{@target} stands proud as a {@sex} {@species}.",
+            "{@target} is a {@species} of the {@sex} variety}"
         ],
         "pattern":
         [
@@ -18,7 +20,10 @@
             {
                 "pattern":
                 [
-                    "The surface of {@target}'s {@bodypart} morphs, as {@colour|pattern} {@pattern} patterns spreads across it."
+                    "The surface of {@target}'s {@bodypart} morphs, as {@colour|pattern} {@pattern} patterns spreads across it.",
+                    "{@target}'s {@bodypart} shimmers, {@pattern} patterns running down the {@bodypart}, settling in a smooth {@colour|pattern}.",
+                    "{@target} tenses up, splotches of {@colour|pattern} spreading along {@f|their} {@bodypart} into {@pattern} markings.",
+                    "The {@bodypart} of {@target} shifts, {@colour|pattern} {@pattern} markings breaking up the {@colour} of {@target}'s {@bodypart}."
                 ]
             },
             "uniform":
